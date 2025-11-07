@@ -9,10 +9,11 @@ public class Campionato{
         elenco=new Squadra[20]; 
         File file=new File(fname);
         Scanner leggi =new Scanner(file);
+
         int i=0;
         while(leggi.hasNextLine()){
             String linea=leggi.nextLine();
-            String[] ss=linea.split(";");
+            String[] ss=linea.split(",");
             elenco[i] = new Squadra(ss[0], Integer.parseInt(ss[1]), Integer.parseInt(ss[2]), Integer.parseInt(ss[3]), Integer.parseInt(ss[4]), Integer.parseInt(ss[5]));
             if(++i>=20) break;
         }

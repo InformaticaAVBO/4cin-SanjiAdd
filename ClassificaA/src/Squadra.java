@@ -3,7 +3,7 @@ public class Squadra{
     private int partite,vinte,pareggiate,perse,punti;
 
 
-    public Squadra(String nome, int partite, int vinte, int pareggiate, int perse, int punti) {
+    public Squadra(String nome, int partite, int i, int j, int k, int l) {
         this.nome = nome;
         this.partite = partite;
         this.vinte = vinte;
