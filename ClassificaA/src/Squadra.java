@@ -1,9 +1,8 @@
-public class Squadra{
+public class Squadra {
     private String nome;
-    private int partite,vinte,pareggiate,perse,punti;
+    private int partite, vinte, pareggiate, perse, punti;
 
-
-    public Squadra(String nome, int partite, int i, int j, int k, int l) {
+    public Squadra(String nome, int partite, int vinte, int pareggiate, int perse, int punti) {
         this.nome = nome;
         this.partite = partite;
         this.vinte = vinte;
@@ -11,15 +10,17 @@ public class Squadra{
         this.perse = perse;
         this.punti = punti;
     }
- @Override
-    public String toString() {
-        return "Squadra [nome=" + nome + ", partite=" + partite + ", vinte=" + vinte + ", pareggiate=" + pareggiate
-                + ", perse=" + perse + ", punti=" + punti + "]";
-    }
- public String getNome() {
 
+    public String getNome() {
         return nome;
     }
-   
+    public int getPunti() {
+    return punti;
+}
 
+    @Override
+    public String toString() {
+        return "nome= " + nome + ", partite= " + partite + ", vinte= " + vinte +
+               ", pareggiate= " + pareggiate + ", perse= " + perse + ", punti= " + punti;
+    }
 }

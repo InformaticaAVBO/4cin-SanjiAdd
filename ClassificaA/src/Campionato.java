@@ -31,4 +31,22 @@ public class Campionato{
         }
         return null;
     }
+    public void stampaSquadre() {
+        for (Squadra s : elenco) {
+            if (s != null) {
+                System.out.println(s);
+            }
+        }
+    }
+
+
+    public int calcolaPunti(){
+        int totale = 0;
+        for (Squadra s : elenco) {
+            if (s != null) {
+                totale += s.getPunti();
+            }
+        }
+        return totale;
+    }
 }
