@@ -1,16 +1,18 @@
+
 public class App {
     public static void main(String[] args) throws Exception {
-        Vettore<String> x = new Vettore<>(0, 0);
-        for (int i=0; i<23; i++)
-            x.add("Juve_" + i);
-        System.out.println(x);
+        Vettore<Persona> elenco = new Vettore<>(1, 5);
+        elenco.add( new Persona("kazi", "umaki"));
+        elenco.add( new Persona("Mario", "Rossi"));
+        System.out.println(elenco);
 
-        
-        System.out.println(x.get(3));
-        System.out.println(x.get(3).getClass());
+        Coppia<String, Persona> p = new Coppia<>("Prof", new Persona("Sanji", "Adduwa"));
+        Coppia<String, Persona> q = new Coppia<>("Comandante", new Persona("Giacomo", "Fari"));
+        System.out.println(p);
+        System.out.println("Primo: " + q.getPrimo());
+        System.out.println("Secondo: " + q.getSecondo());
 
-        //Vettore<Persona> elenco = new Vettore<Persona>(10, 5);
 
-        
+       
     }
 }
